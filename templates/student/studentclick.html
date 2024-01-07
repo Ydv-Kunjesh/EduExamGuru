@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.3/components/services/service-3/assets/css/service-3.css" />
+ 
+
+  <style>
+    /* .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    } */
+
+
+    body {
+	font-family: "Open Sans", sans-serif;
+    /* background: -webkit-linear-gradient(to right, #a36a23,  #df1717, #cdae12);  Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #c97917, #0584e4); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
+  background: radial-gradient(circle, #e0adc7, #add2d8);
+
+
+    
+  
+}
+h2 {
+	color: #01e0d9;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Roboto", sans-serif;
+	font-weight: bold;
+	position: relative;
+	margin: 30px 0 60px;
+}
+h2::after {
+	content: "";
+	width: 100px;
+	position: absolute;
+	margin: 0 auto;
+	height: 3px;
+	background: #8fbc54;
+	left: 0;
+	right: 0;
+	bottom: -10px;
+}
+.col-center {
+	margin: 0 auto;
+	float: none !important;
+}
+.carousel {
+	padding: 0 70px;
+}
+.carousel .carousel-item {
+	color: #999;
+	font-size: 14px;
+	text-align: center;
+	overflow: hidden;
+	min-height: 290px;
+}
+.carousel .carousel-item .img-box {
+	width: 135px;
+	height: 135px;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid #ddec08;
+	border-radius: 50%;
+}
+.carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+}
+.carousel .testimonial {
+	padding: 30px 0 10px;
+  color: hsl(0, 0%, 0%);
+}
+.carousel .overview {	
+	font-style: italic;
+}
+.carousel .overview b {
+	/* text-transform: uppercase; */
+	color: #aa2876;
+}
+.carousel-control-prev, .carousel-control-next {
+	width: 40px;
+	height: 40px;
+	margin-top: -20px;
+	top: 50%;
+	background: none;
+}
+.carousel-control-prev i, .carousel-control-next i {
+	font-size: 68px;
+	line-height: 42px;
+	position: absolute;
+	display: inline-block;
+	color: rgba(0, 0, 0, 0.8);
+	text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+.carousel-indicators {
+	bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 12px;
+	height: 12px;
+	margin: 1px 3px;
+	border-radius: 50%;
+	border: none;
+}
+.carousel-indicators li {	
+	background: #999;
+	border-color: transparent;
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active {	
+	background: #555;		
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+
+
+  </style>
+
+</head>
+
+<body>
+
+  {% include "exam/navbar.html" %}
+  <br><br>
+
+<br><br>
+
+  <div class="container-xl">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h2>Student Portal</h2>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <br>
+          
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="img-box"><img src="https://cdn-icons-png.flaticon.com/128/3429/3429417.png" alt="Nashit Sir"></div>
+              <p class="testimonial">Hey Welcome to our Portal  <br> Proceed with anyone to get into the system</p>
+              <p class="overview"><b><a  href="studentsignup">Create Your Account</a></b></p>
+              <p class="overview"><b><a href="studentlogin">Login Now</a></b></p>
+            </div>
+            
+          </div>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+  <div class="jumbotron" style="margin-bottom:0px;">
+    <h1 class="display-4">Hello Student,</h1>
+    <p class="lead">and Welcome to Online Examination System</p> -->
+    <!-- <hr class="my-4">
+    <p>Select any of them to access into the system</p>
+    <p class="lead">
+      <a class="btn btn-primary " href="studentsignup" style="border-radius: 0%;" role="button">Create Your Account</a>
+      <a class="btn btn-success " href="studentlogin" style="border-radius: 0%;" role="button">Login Now</a>
+    </p>
+    <br><br><br><br><br><br>
+  </div> 
+  -->
+  {% include "exam/footer.html" %}
+</body>
+
+</html>

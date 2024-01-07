@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <style>
+    /*---------------------------------------
+   Social section
+-----------------------------------------*/
+    footer {
+      padding: 0px 0px 0px 0px;
+      background-color: #09e4e4;
+      margin: 0px;
+    }
+
+    .fa {
+      padding: 20px;
+      font-size: 23px;
+      width: 60px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+      border-radius: 50%;
+    }
+
+    .fa:hover {
+      opacity: 0.5;
+      text-decoration: none;
+    }
+
+
+
+    p {
+      text-align: auto;
+
+    }
+  </style>
+</head>
+
+<footer>
+
+<div class="container-fluid bg-info text-secondary p-4">
+    <div class="row g-5">
+        <div class="col-lg-3 col-md-6">
+            <h3 class="text-white mb-4">Quick Links</h3>
+            <div class="d-flex flex-column justify-content-start">
+                <a class="text-white mb-2" href="#"><i class="bi bi-arrow-right   text-primary  me-2"></i>Home</a>
+                <a class="text-white mb-2" href="#"><i class="bi bi-arrow-right  text-primary  me-2"></i>About Us</a>
+                <a class="text-white mb-2" href="#"><i class="bi bi-arrow-right   text-primary me-2"></i>Our Services</a>
+                <a class="text-white mb-2" href="#"><i class="bi bi-arrow-right  text-primary  me-2"></i>Latest Blog Post</a>
+                <a class="text-white mb-2" href="#"><i class="bi bi-arrow-right  text-primary  me-2"></i>Contact Us</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <h3 class="text-white mb-4">Popular Links</h3>
+            <div class="d-flex flex-column justify-content-start">
+                <a class="text-white mb-2" href="/"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+
+
+                
+                <a class="text-white mb-2" href="/teacher/teacherclick"><i class="bi bi-arrow-right text-primary me-2"></i>Teacher</a>
+                <a class="text-white mb-2" href="/student/studentclick"><i class="bi bi-arrow-right text-primary me-2"></i>Students</a>
+                <a class="text-white mb-2" href="/adminclick"><i class="bi bi-arrow-right text-primary me-2"></i>Admin Panel</a>
+                <a class="text-white mb-2" href="/contactus"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <h3 class="  text-white  mb-4">Get In Touch</h3>
+            <p class="  text-white mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>Niranjanpur greenpark colony,Dehradun,Uttarakhand</p>
+            <p class="  text-white mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>ugcoders@gmail.com</p>
+            <p class="  text-white mb-0"><i class="bi bi-telephone text-primary me-2"></i>+91 7257961815</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <h3 class="text-white mb-4">Follow Us</h3>
+            <div class="d-flex">
+                <a class="btn btn-sm btn-danger rounded-circle me-2" href="https://github.com/Ydv-Kunjesh"><i class="fa fa-github"></i></a>
+                <a class="btn btn-sm btn-danger rounded-circle me-2" href="https://www.linkedin.com/in/kunjesh-ydv-6a2179252"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a class="btn btn-sm btn-danger rounded-circle me-2" href="https://www.facebook.com/kunjeshyadav.kunjeshyadav/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a class="btn btn-sm btn-danger rounded-circle me-2" href="https://www.instagram.com/ungraduate_bihari/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <!-- <a class="btn btn-sm btn-danger rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-sm btn-danger rounded-circle me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-sm btn-danger rounded-circle me-1" href=""><i class="fab fa-instagram"></i></a> -->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid bg-dark text-secondary text-center border-top py-4 px-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+    <p class="m-0">&copy; <a class="text-secondary border-bottom" href="#">EduExamGuru</a>. All Rights Reserved. Designed by <a class="text-secondary border-bottom" href="https://ungraduatecoders.000webhostapp.com/">Ungraduate Coders</a></p>
+</div>
+</footer>
+<script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "ba74f02d-e206-4883-baae-9156770a3c6f", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "356963b0-eedd-4ae9-b8da-0661991e02a9", // The ID of your service instance.
+      onLoad: async (instance) => { await instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+</html>
