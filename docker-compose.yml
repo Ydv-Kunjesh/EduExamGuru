@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  app:
+    build: .
+    volumes:
+      - .:/django
+    ports:
+      - 8000:8000
+    image: app:django
+    container_name: my_first_docker_project
+    command: python manage.py runserver 0.0.0.0:8000
+    depends_on:
+      - mongodb
+  mongodb:
+    image: mongo
